@@ -1,4 +1,4 @@
-# Projet_7
+# Projet_7 (UPDATE 26/01/2022 -> Projet en cours de developpement)
  Créez un réseau social d’entreprise
 
 
