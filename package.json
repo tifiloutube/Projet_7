@@ -1,0 +1,19 @@
+{
+  "name": "projet_7",
+  "version": "1.0.0",
+  "description": "Créez un réseau social d’entreprise",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tifiloutube/Projet_7.git"
+  },
+  "author": "Philippe VILARINHO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tifiloutube/Projet_7/issues"
+  },
+  "homepage": "https://github.com/tifiloutube/Projet_7#readme"
+}

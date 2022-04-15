@@ -42,4 +42,54 @@ VALUES ('FLORES', 'Stéphan', 'stephanLeGrosZgueg@mashvp.com', 'test', '1');
 INSERT INTO `posts` (`userId`, `title`, `content`)
 VALUES ('Premier commentaire', 'Voici le contenu de mon premier commentaire' );
 
--- Joindre la table posts à la table users
+--Ajout d'un utilisateur dans la base de données
+INSERT INTO `users` (`lastName`, `firstName`, `email`, `password`)
+VALUES ('VILARINHO', 'Philippe', 'philippe.vilarinhocerqueira@gmail.com', 'azerty');
+
+-- Recherche des posts pour l'users ayant l'id 1
+select * from users join posts posts ON (posts.id = users.id);
+
+
+/*
+const Sequelize = require('sequelize');
+
+// Connection de la base de données MySQL au serveur Node.js
+const sequelize = new Sequelize("groupomania_dtb", "root", "90630@Klm31085", {
+    dialect: "mysql",
+    host : "localhost"
+});
+var exports = module.exports = {};
+exports.sequelize = sequelize;
+
+try {
+    sequelize.authenticate();
+    console.log('Connecté à la base de données MySQL groupomania_dtb');
+} catch (error) {
+    console.error('Impossible de se connecter, erreur suivante :', error);
+}
+
+// Ajout d'/un utilisateur dans la base de données MySQL
+/*try {
+    sequelize.query("INSERT INTO `users` (`lastName`, `firstName`, `email`, `password`) VALUES ('TEST', 'Test', 'test@gmail.com', 'testPassword')").then(([results, metadata]) => {
+        console.log(results);
+    })
+} catch (error) {
+    console.error('Impossible de se connecter, erreur suivante :', error);
+}*/
+
+try {
+    sequelize.query("SELECT * FROM `users`").then(([results, metadata]) => {
+        console.log(results);
+    })
+} catch (error) {
+    console.log(error);
+}
+
+try {
+    sequelize.query("DELETE FROM `users` WHERE `id` = 4").then(([results, metadata]) => {
+        console.log(results);
+    })
+} catch (error) {
+    console.log(error);
+}
+*/
